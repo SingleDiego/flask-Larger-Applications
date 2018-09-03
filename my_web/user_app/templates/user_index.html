@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='my_web/css/bootstrap.min.css' ) }}">
+</head>
+<body>
+	<h1>Here Is User!</h1>
+
+	{% for user in user_list %}
+		<h3>{{ user.name }}</h3>
+	{% endfor %}
+</body>
+</html>

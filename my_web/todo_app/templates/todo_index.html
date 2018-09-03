@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todo</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='my_web/css/bootstrap.min.css' ) }}">
+</head>
+<body>
+	<h1>Here Is Todo!</h1>
+
+	{% for todo in todo_list %}
+		<h3>{{ todo.work }}</h3>
+	{% endfor %}
+</body>
+</html>
